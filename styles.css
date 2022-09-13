@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,19 +15,43 @@ body {
     width: 40vw;
 }
 
-.signup-container {
+.right-half {
     background-color: #2E0249;
-    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.txt, .signup, .account {
+.txt, .account {
     flex: 1;
+}
+
+.signup-text{
+    font-size: 3rem;
+}
+
+label {
+    font-size: 1.1rem;
 }
 
 .signup {
     background-color: #570A57;
     border: 2px solid #A91079;
+    height: 33vh;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
+.signup form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.input {
+    width: 40%;
+    margin-top: 2%;
+}
+
+.input input {
+    width: 100%;
+}
