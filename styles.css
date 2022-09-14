@@ -4,54 +4,126 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #F806CC;
+}
+
 body {
-    margin: 0;
-    padding: 0;
     height: 100vh;
     display: flex;
 }
 
-#bgimg {
+.bgimg {
+    background-image: url("img/cyber.jpg");
+    background-size:cover;
+    flex: none;
     width: 40vw;
-}
-
-.right-half {
-    background-color: #2E0249;
     display: flex;
     flex-direction: column;
 }
 
-.txt, .account {
-    flex: 1;
+.logodiv {
+    margin-top: 18vh;
+    height: 15vh;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 2rem;
+    font-family: 'Chango', cursive;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
+
+.logo img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.right-half {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.txt {
+    color: rgb(199, 197, 197);
+    font-size: 1.8rem;
+    height: 33vh;
+    padding-top: 8%;
+    padding-left: 5%;
+}
+
+
 
 .signup-text{
-    font-size: 3rem;
+    font-size: 2rem;
+    color: rgb(199, 197, 197);
 }
 
-label {
-    font-size: 1.1rem;
-}
 
 .signup {
-    background-color: #570A57;
-    border: 2px solid #A91079;
-    height: 33vh;
+    height: 30vh;
     padding-left: 30px;
     padding-top: 30px;
+    background-color: #070707;
 }
 
 .signup form {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 1.5%;
 }
-
 .input {
     width: 40%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
+
 
 .input input {
     width: 100%;
+    height: 57%;
+    background: transparent;
+    border: 1px solid #353535;
+    background-color: rgb(10, 10, 10);
+    color: rgb(199, 197, 197);
+    padding-left: 1%;
+}
+
+
+
+label {
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(173, 173, 173);
+}
+
+
+.register {
+    flex: 1;
+    padding-left: 5%;
+    padding-top: 3%;
+}
+
+.register-button {
+    height: 70px;
+    width: 210px;
+    background-color: transparent;
+    border: 1px solid #F806CC;
+    color: #F806CC;
+    font-size: 1.5rem;
+}
+
+.register-button:hover {
+    color: #000;
+    background-color: #F806CC;
+}
+
+
+.log-in {
+    color: rgb(199, 197, 197);
+    margin-top: 2%;
+    font-size: 1.3rem;
 }
