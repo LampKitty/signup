@@ -53,12 +53,14 @@
             <form id="myform">
                 <div class="input">
                     <div><label for="user_name">FIRST NAME</label></div>
-                    <input type="text" id="user_name" name="user_name">
+                    <input type="text" id="user_name" name="user_name"
+                    pattern="[^0-9].{1,}">
                 </div>
 
                 <div class="input">
                     <div><label for="user_surname">LAST NAME</label></div>
-                    <input type="text" id="user_surname" name="user_surname">
+                    <input type="text" id="user_surname" name="user_surname"
+                    pattern="[^0-9].{1,}">
                 </div>
 
                 <div class="input">
