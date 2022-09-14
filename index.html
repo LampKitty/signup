@@ -23,6 +23,9 @@
             <div class="logo"><img src="img/logo.jpg" alt=""></div>
             <span>Kitty inc.</span>
         </div>
+        <div class="credits">
+            Photo by &nbsp<a href="https://unsplash.com/photos/4pTY4ty7jXM"> cheng feng</a>
+        </div>
     </div>
 
 
@@ -40,7 +43,7 @@
 
         <div class="signup">
             <span class="signup-text">Let's do this!</span>
-            <form>
+            <form id="myform">
                 <div class="input">
                     <div><label for="user_name">FIRST NAME</label></div>
                     <input type="text" id="user_name" name="user_name">
@@ -73,7 +76,7 @@
             </form>
         </div>
         <div class="register">
-            <button type="submit" class="register-button">
+            <button type="submit" form="myform" class="register-button">
                 <strong>Create account</strong></button>
             <div class="log-in">Already have an account? <a href="#">Log in</a></div>
         </div>
